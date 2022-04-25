@@ -74,6 +74,7 @@ def updateParking(parkingPanelIdBoxes,parkingPanels,parkingIcons,parkingId,parki
             parkingIcons[parkingId].bg = parkingUnavailableColor
     else:
         print("Range error")
+    availableSpaceLabel.value = availableSpaces(parkingSpaces)
     
     
     
@@ -95,7 +96,9 @@ def midContainerRightPanel(app,parkingSpaces):
     Text(detailsBox, text=spacer,
              size=bodyTextSize, color=textThemePrimaryColor)
     Text(detailsBox, text="Available Spaces",size=largeHeading)
-    Text(detailsBox, text=availableSpaces(parkingSpaces),size=jumboText)
+    global availableSpaceLabel
+    availableSpaceLabel = Text(detailsBox, text=availableSpaces(parkingSpaces),size=jumboText)
+    
     
     
 

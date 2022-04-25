@@ -14,7 +14,7 @@ totalTailGates = 1
 parkingSpaces = list()
 tailGate = TailGate(0, "close")
 app = App(title=appTitle, bg=appBackgroundColor)
-app.set_full_screen()
+# app.set_full_screen()
 window = Window(app, title="Splash Screen",bg=appBackgroundColor)
 # window.tk.attributes("-fullscreen",True)
 
