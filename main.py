@@ -1,5 +1,5 @@
 from guizero import *
-from screens.mainScreen import mainScreen
+from screens.mainScreen import *
 
 from screens.splashScreen import *
 
