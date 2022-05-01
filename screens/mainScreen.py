@@ -104,7 +104,7 @@ def midContainerRightPanel(app,parkingSpaces):
 
 
 def footerContainer(app,parkingSpaces,tailGate):
-
+    
     bottomBox = Box(app, width="fill", align="bottom", layout="auto")
     tailGateStatusBox = Text(bottomBox, text=gateClosedText,
                                  align="top", size=subHeadingSize, color=textThemePrimaryColor)
@@ -122,7 +122,8 @@ def footerContainer(app,parkingSpaces,tailGate):
    
     Text(bottomBox, text=spacer, align="left",size = bodyTextSize,color=textThemePrimaryColor)
     # button = PushButton(app, command=updateFooterText,args = [tailGateStatusBox,gate,tailGate,parkingSpaces])
-
+    # updateFooterText(tailGateStatusBox,gate,tailGate,parkingSpaces)
+    
 def updateFooterText(tailGateStatusBox,gate,tailGate,parkingSpaces):
     spacesLeft = availableSpaces(parkingSpaces)
     if(spacesLeft > 0):
